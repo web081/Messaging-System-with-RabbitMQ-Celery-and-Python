@@ -13,6 +13,27 @@ sudo systemctl start rabbitmq-server
 ### Celery Installation
 
 ```sh
-pip install celery
+pip install flask celery 
 ```
+#### Install Nginx server
+```sh
+apt-get install nginx
+```
+#### Install ngrok and expose the local server:
+```sh
+ngrok http 80
+```
+### working dir tree of the file
+```sh
+messaging_system/
+│
+├── app.py
+├── messaging_system.log
+├── celery_worker.py
+├── nginx.conf
+├── requirements.txt
+├── venv/
+
+```
+
 
