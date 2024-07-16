@@ -56,18 +56,18 @@ def handle_request():
     elif talktome_param is not None: 
         current_time = time.strftime("%Y-%m-%d %H:%M:%S")
         log_message = f'Logged at {current_time}\n'
-        log_file = '/var/log/messaging_system.log'
+        log_file = 'messaging_system.log'
         with open(log_file, 'a') as f:
             f.write(log_message)
         return 'Logging message...'
 
     else:
-        return 'Stage 3 Task Messaging System!'
+        return 'Stage 3 Task Messaging System! by Kola Komolafe'
 
 @app.route('/logs')
 def get_log():
     try:
-        with open('/var/log/messaging_system.log', 'r') as f:
+        with open('messaging_system.log', 'r') as f:
             log_content = f.read()
         return Response(log_content, mimetype='text/plain')
     except Exception as e:
