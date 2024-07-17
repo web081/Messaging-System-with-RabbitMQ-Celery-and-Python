@@ -1,6 +1,24 @@
 ## Messaging System with RabbitMQ/Celery and Python
 
-### Deploy a Python application behind Nginx that interacts with RabbitMQ/Celery for email sending and logging functionality.
+<b> I will develop a Python Messaging Queue testing system, a Python application behind Nginx that interacts with RabbitMQ/Celery for email sending and logging functionality which consists of the following 'Tools' as our requirement. </b>
+
+- RabbitMQ
+- Celery
+- Ngrok
+- Nginx
+
+##### What is RabbitMQ?
+
+RabbitMQ is an open-source messaging software that implements the Advanced Message Queuing Protocol (AMQP) and is widely used for managing messaging queues. 
+
+##### What is Celery?
+
+Celery is an asynchronous task/job queue based on distributed message passing. its main purpose is to handle "asynchronous" task queue/job queue that handles the execution of background tasks
+
+##### What is Ngrok?
+
+Ngrok is a tool that creates secure tunnels from a public endpoint (like the internet) to a locally running web service or application
+##### 
 
 #### Install RabbitMQ and Celery on your local machine:
 ```sh
@@ -10,10 +28,10 @@ sudo systemctl enable rabbitmq-server
 sudo systemctl start rabbitmq-server
 ```
 
-### Celery Installation
+### Celery, Flask, python-dotenv Installation
 
 ```sh
-pip install flask celery 
+pip install flask celery python-dotenv
 ```
 #### Install Nginx server
 ```sh
@@ -21,7 +39,7 @@ apt-get install nginx
 ```
 #### Install ngrok and expose the local server:
 ```sh
-ngrok http 80
+ngrok http 8080
 ```
 ### working dir tree of the file
 ```sh
