@@ -53,5 +53,10 @@ messaging_system/
 ├── venv/
 
 ```
-
-
+### Testing Endpoint to ensure the application is working properly
+```sh
+localhost:5000
+localhost:5000/?sendmail=bomprince@gmail.com  #sending email endpoint
+localhost:+5000/?talktome    
+localhost:5000/logs       #testing retrieve logs endpoint
+```
