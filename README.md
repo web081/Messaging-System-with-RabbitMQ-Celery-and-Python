@@ -55,8 +55,9 @@ messaging_system/
 ```
 ### Testing Endpoint to ensure the application is working properly
 ```sh
-localhost:5000
-localhost:5000/?sendmail=bomprince@gmail.com  #sending email endpoint
-localhost:+5000/?talktome    
-localhost:5000/logs       #testing retrieve logs endpoint
+# you can use curl http://127.0.0.1:5000/  to Test endpoint 
+http://127.0.0.1:5000
+http://127.0.0.1:5000/?sendmail=bomprince@gmail.com  #sending email endpoint
+http://127.0.0.1:5000/?talktome    
+http://127.0.0.1:5000/logs       #testing retrieve logs endpoint
 ```
